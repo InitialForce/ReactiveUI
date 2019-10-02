@@ -236,8 +236,8 @@ namespace ReactiveUI
 
             return new ObservableAsPropertyHelper<TRet>(
                 observable,
-                _ => target.RaisingPropertyChanged(name),
-                _ => target.RaisingPropertyChanging(name),
+                target,
+                name,
                 initialValue,
                 deferSubscription,
                 scheduler);
@@ -258,8 +258,8 @@ namespace ReactiveUI
 
             return new ObservableAsPropertyHelper<TRet>(
                                                         observable,
-                                                        _ => target.RaisingPropertyChanged(property),
-                                                        _ => target.RaisingPropertyChanging(property),
+                                                        target,
+                                                        property,
                                                         initialValue,
                                                         deferSubscription,
                                                         scheduler);

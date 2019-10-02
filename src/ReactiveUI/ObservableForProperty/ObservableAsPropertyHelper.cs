@@ -37,46 +37,11 @@ namespace ReactiveUI
         /// <param name="observable">
         /// The Observable to base the property on.
         /// </param>
-        /// <param name="onChanged">
-        /// The action to take when the property changes, typically this will call the
-        /// ViewModel's RaisePropertyChanged method.
+        /// <param name="reactiveObject">
+        /// The reactiveObject.
         /// </param>
-        /// <param name="initialValue">
-        /// The initial value of the property.
-        /// </param>
-        /// <param name="deferSubscription">
-        /// A value indicating whether the <see cref="ObservableAsPropertyHelper{T}"/>
-        /// should defer the subscription to the <paramref name="observable"/> source
-        /// until the first call to <see cref="Value"/>, or if it should immediately
-        /// subscribe to the the <paramref name="observable"/> source.
-        /// </param>
-        /// <param name="scheduler">
-        /// The scheduler that the notifications will be provided on -
-        /// this should normally be a Dispatcher-based scheduler.
-        /// </param>
-        public ObservableAsPropertyHelper(
-            IObservable<T> observable,
-            Action<T> onChanged,
-            T initialValue = default(T),
-            bool deferSubscription = false,
-            IScheduler scheduler = null)
-            : this(observable, onChanged, null, initialValue, deferSubscription, scheduler)
-        {
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ObservableAsPropertyHelper{T}"/> class.
-        /// </summary>
-        /// <param name="observable">
-        /// The Observable to base the property on.
-        /// </param>
-        /// <param name="onChanged">
-        /// The action to take when the property changes, typically this will call
-        /// the ViewModel's RaisePropertyChanged method.
-        /// </param>
-        /// <param name="onChanging">
-        /// The action to take when the property changes, typically this will call
-        /// the ViewModel's RaisePropertyChanging method.
+        /// <param name="propertyName">
+        /// The name of the property to raise an event for.
         /// </param>
         /// <param name="initialValue">
         /// The initial value of the property.
@@ -93,25 +58,24 @@ namespace ReactiveUI
         /// </param>
         public ObservableAsPropertyHelper(
             IObservable<T> observable,
-            Action<T> onChanged,
-            Action<T> onChanging = null,
+            IReactiveObject reactiveObject,
+            string propertyName,
             T initialValue = default(T),
             bool deferSubscription = false,
             IScheduler scheduler = null)
         {
             Contract.Requires(observable != null);
-            Contract.Requires(onChanged != null);
+            Contract.Requires(propertyName != null);
 
             scheduler = scheduler ?? CurrentThreadScheduler.Instance;
-            onChanging = onChanging ?? (_ => { });
 
             _subject = new ScheduledSubject<T>(scheduler);
             _subject.Subscribe(
                 x =>
                 {
-                    onChanging(x);
+                    reactiveObject.RaisePropertyChanging(propertyName);
                     _lastValue = x;
-                    onChanged(x);
+                    reactiveObject.RaisePropertyChanged(propertyName);
                 },
                 ex => _thrownExceptions.Value.OnNext(ex))
                 .DisposeWith(_disposable);
@@ -156,22 +120,6 @@ namespace ReactiveUI
         /// internal state.
         /// </summary>
         public IObservable<Exception> ThrownExceptions => _thrownExceptions.Value;
-
-        /// <summary>
-        /// Constructs a "default" ObservableAsPropertyHelper object. This is
-        /// useful for when you will initialize the OAPH later, but don't want
-        /// bindings to access a null OAPH at startup.
-        /// </summary>
-        /// <param name="initialValue">
-        /// The initial (and only) value of the property.
-        /// </param>
-        /// <param name="scheduler">
-        /// The scheduler that the notifications will be provided on - this should
-        /// normally be a Dispatcher-based scheduler.
-        /// </param>
-        /// <returns>A default property helper.</returns>
-        public static ObservableAsPropertyHelper<T> Default(T initialValue = default(T), IScheduler scheduler = null) =>
-            new ObservableAsPropertyHelper<T>(Observable<T>.Never, _ => { }, initialValue, false, scheduler);
 
         /// <summary>
         /// Disposes this ObservableAsPropertyHelper.
