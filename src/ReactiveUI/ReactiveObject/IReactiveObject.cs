@@ -37,5 +37,29 @@ namespace ReactiveUI
         /// </summary>
         /// <param name="args">The arguments with details about the property that has changed.</param>
         void RaisePropertyChanged(PropertyChangedEventArgs args);
+
+        /// <summary>
+        /// Raise a property is changing event.
+        /// </summary>
+        /// <param name="args">The arguments with details about the property that is changing.</param>
+        void RaisePropertyChanging(string args);
+
+        /// <summary>
+        /// Raise a property has changed event.
+        /// </summary>
+        /// <param name="args">The arguments with details about the property that has changed.</param>
+        void RaisePropertyChanged(string args);
+
+        /// <summary>
+        /// Returns the Changing observable.
+        /// </summary>
+        /// <returns>The changing observable.</returns>
+        IObservable<IReactivePropertyChangedEventArgs<IReactiveObject>> GetChangingObservable();
+
+        /// <summary>
+        /// Returns the Changed observable.
+        /// </summary>
+        /// <returns>The changed observable.</returns>
+        IObservable<IReactivePropertyChangedEventArgs<IReactiveObject>> GetChangedObservable();
     }
 }

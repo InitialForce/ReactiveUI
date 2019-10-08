@@ -73,9 +73,9 @@ namespace ReactiveUI
             _subject.Subscribe(
                 x =>
                 {
-                    reactiveObject.RaisePropertyChanging(propertyName);
+                    IReactiveObjectExtensions.RaisePropertyChanging(reactiveObject, propertyName);
                     _lastValue = x;
-                    reactiveObject.RaisePropertyChanged(propertyName);
+                    IReactiveObjectExtensions.RaisePropertyChanged(reactiveObject, propertyName);
                 },
                 ex => _thrownExceptions.Value.OnNext(ex))
                 .DisposeWith(_disposable);

@@ -105,7 +105,7 @@ namespace ReactiveUI
         public object AppState
         {
             get => _appState;
-            set => this.RaiseAndSetIfChanged(ref _appState, value);
+            set => RaiseAndSetIfChanged(ref _appState, value);
         }
 
         public void Dispose()
