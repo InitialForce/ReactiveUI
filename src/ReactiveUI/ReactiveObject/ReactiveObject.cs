@@ -4,8 +4,10 @@
 // See the LICENSE file in the project root for full license information.
 
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Diagnostics.Contracts;
 using System.Reactive;
 using System.Reactive.Concurrency;
@@ -15,6 +17,7 @@ using System.Reactive.Subjects;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.Threading;
+using DynamicData.Annotations;
 using Splat;
 
 namespace ReactiveUI
@@ -30,13 +33,27 @@ namespace ReactiveUI
         private readonly Lazy<(ISubject<IReactivePropertyChangedEventArgs<IReactiveObject>> subject,
             IObservable<IReactivePropertyChangedEventArgs<IReactiveObject>> observable)> _changed;
 
+        [NotNull]
+        private readonly ConcurrentDictionary<string, ReactivePropertyChangedEventArgs<ReactiveObject>>
+            _changedDict =
+                new ConcurrentDictionary<string, ReactivePropertyChangedEventArgs<ReactiveObject>>();
+
         private readonly Lazy<(ISubject<IReactivePropertyChangedEventArgs<IReactiveObject>> subject,
             IObservable<IReactivePropertyChangedEventArgs<IReactiveObject>> observable)> _changing;
+
+        [NotNull]
+        private readonly ConcurrentDictionary<string, ReactivePropertyChangingEventArgs<ReactiveObject>>
+            _changingDict =
+                new ConcurrentDictionary<string, ReactivePropertyChangingEventArgs<ReactiveObject>>();
 
         private readonly Lazy<Subject<Unit>> _startDelayNotifications = new Lazy<Subject<Unit>>();
 
         private readonly Lazy<ISubject<Exception>> _thrownExceptions = new Lazy<ISubject<Exception>>(() =>
             new ScheduledSubject<Exception>(Scheduler.Immediate, RxApp.DefaultExceptionHandler));
+
+        private readonly Func<string, ReactivePropertyChangedEventArgs<ReactiveObject>> _valueFactoryChanged;
+
+        private readonly Func<string, ReactivePropertyChangingEventArgs<ReactiveObject>> _valueFactoryChanging;
 
         private long _changeNotificationsDelayed;
 
@@ -47,6 +64,8 @@ namespace ReactiveUI
         /// </summary>
         public ReactiveObject()
         {
+            _valueFactoryChanged = v => new ReactivePropertyChangedEventArgs<ReactiveObject>(this, v);
+            _valueFactoryChanging = v => new ReactivePropertyChangingEventArgs<ReactiveObject>(this, v);
             _changing =
                 new Lazy<(ISubject<IReactivePropertyChangedEventArgs<IReactiveObject>>,
                     IObservable<IReactivePropertyChangedEventArgs<IReactiveObject>>)>(() =>
@@ -185,13 +204,22 @@ namespace ReactiveUI
         /// <inheritdoc />
         public void RaisePropertyChanged([CallerMemberName] string propertyName = null)
         {
+            Debug.Assert(propertyName != null, nameof(propertyName) + " != null");
+
             if (!AreChangeNotificationsEnabled())
             {
                 return;
             }
 
-            var changed = new ReactivePropertyChangedEventArgs<IReactiveObject>(this, propertyName);
-            RaisePropertyChanged(changed);
+            ReactivePropertyChangedEventArgs<ReactiveObject> changed = null;
+            PropertyChangedEventHandler onPropertyChanged = PropertyChanged;
+
+            if (onPropertyChanged != null || _changed.IsValueCreated)
+            {
+                changed = _changedDict.GetOrAdd(propertyName, _valueFactoryChanged);
+            }
+
+            onPropertyChanged?.Invoke(this, changed);
 
             if (_changed.IsValueCreated)
             {
@@ -225,8 +253,15 @@ namespace ReactiveUI
                 return;
             }
 
-            var changing = new ReactivePropertyChangingEventArgs<IReactiveObject>(this, propertyName);
-            RaisePropertyChanging(changing);
+            ReactivePropertyChangingEventArgs<ReactiveObject> changing = null;
+
+            PropertyChangingEventHandler onPropertyChanging = PropertyChanging;
+            if (onPropertyChanging != null || _changing.IsValueCreated)
+            {
+                changing = _changingDict.GetOrAdd(propertyName, _valueFactoryChanging);
+            }
+
+            onPropertyChanging?.Invoke(this, changing);
 
             if (_changing.IsValueCreated)
             {
