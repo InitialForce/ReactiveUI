@@ -26,10 +26,14 @@ namespace ReactiveUI
     {
         private readonly Lazy<ISubject<Exception>> _thrownExceptions;
         private readonly IObservable<T> _source;
-        private readonly ISubject<T> _subject;
+        private readonly IReactiveObject _reactiveObject;
+        private readonly string _propertyName;
         private T _lastValue;
         private CompositeDisposable _disposable = new CompositeDisposable();
         private int _activated;
+        private readonly Action<T> _onNext;
+        private readonly Action<Exception> _onError;
+        private readonly IScheduler _scheduler;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ObservableAsPropertyHelper{T}"/> class.
@@ -67,29 +71,38 @@ namespace ReactiveUI
             Contract.Requires(observable != null);
             Contract.Requires(propertyName != null);
 
-            scheduler = scheduler ?? CurrentThreadScheduler.Instance;
+            _scheduler = scheduler;
 
-            _subject = new ScheduledSubject<T>(scheduler);
-            _subject.Subscribe(
-                x =>
-                {
-                    IReactiveObjectExtensions.RaisePropertyChanging(reactiveObject, propertyName);
-                    _lastValue = x;
-                    IReactiveObjectExtensions.RaisePropertyChanged(reactiveObject, propertyName);
-                },
-                ex => _thrownExceptions.Value.OnNext(ex))
-                .DisposeWith(_disposable);
+            _onNext = x =>
+            {
+                IReactiveObjectExtensions.RaisePropertyChanging(_reactiveObject, _propertyName);
+                _lastValue = x;
+                IReactiveObjectExtensions.RaisePropertyChanged(_reactiveObject, _propertyName);
+            };
+            _onError = ex => _thrownExceptions.Value.OnNext(ex);
 
-            _thrownExceptions = new Lazy<ISubject<Exception>>(() => new ScheduledSubject<Exception>(CurrentThreadScheduler.Instance, RxApp.DefaultExceptionHandler));
+            _thrownExceptions = new Lazy<ISubject<Exception>>(() =>
+                new ScheduledSubject<Exception>(CurrentThreadScheduler.Instance, RxApp.DefaultExceptionHandler));
 
+            _reactiveObject = reactiveObject;
+            _propertyName = propertyName;
             _lastValue = initialValue;
             _source = observable.StartWith(initialValue).DistinctUntilChanged();
             if (!deferSubscription)
             {
-                _source.Subscribe(_subject).DisposeWith(_disposable);
+                if(_scheduler != null)
+                {
+                    _source.ObserveOn(_scheduler).Subscribe(_onNext, _onError).DisposeWith(_disposable);
+                }
+                else
+                {
+                    _source.Subscribe(_onNext, _onError).DisposeWith(_disposable);
+                }
                 _activated = 1;
             }
         }
+
+        private void OnError(Exception ex) => _thrownExceptions.Value.OnNext(ex);
 
         /// <summary>
         /// Gets the last provided value from the Observable.
@@ -100,7 +113,14 @@ namespace ReactiveUI
             {
                 if (Interlocked.CompareExchange(ref _activated, 1, 0) == 0)
                 {
-                    _source.Subscribe(_subject).DisposeWith(_disposable);
+                    if (_scheduler != null)
+                    {
+                        _source.ObserveOn(_scheduler).Subscribe(_onNext, _onError).DisposeWith(_disposable);
+                    }
+                    else
+                    {
+                        _source.Subscribe(_onNext, _onError).DisposeWith(_disposable);
+                    }
                 }
 
                 return _lastValue;
