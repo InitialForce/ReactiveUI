@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 using System.Windows.Input;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A data-only version of IObservedChange.

@@ -12,7 +12,7 @@ using System.Reactive.Subjects;
 using Foundation;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a UINavigationController that is both an UINavigationController and has ReactiveObject powers

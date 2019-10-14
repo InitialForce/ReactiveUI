@@ -20,7 +20,7 @@ using System.Threading;
 using DynamicData.Annotations;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// ReactiveObject is the base object for ViewModel classes, and it

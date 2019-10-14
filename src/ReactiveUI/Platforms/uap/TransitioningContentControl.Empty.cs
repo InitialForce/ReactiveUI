@@ -7,9 +7,9 @@ using System.Diagnostics.CodeAnalysis;
 using Windows.UI.Xaml.Controls;
 
 #if HAS_UNO
-namespace ReactiveUI.Uno
+namespace ReactiveUIInitialForce.Uno
 #else
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 #endif
 {
     /// <summary>

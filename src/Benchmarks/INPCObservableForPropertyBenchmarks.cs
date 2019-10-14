@@ -10,7 +10,7 @@ using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using BenchmarkDotNet.Attributes;
 
-namespace ReactiveUI.Benchmarks
+namespace ReactiveUIInitialForce.Benchmarks
 {
     /// <summary>
     /// Bench marks checking the performance of the INotifyPropertyChanged related classes.

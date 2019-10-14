@@ -12,7 +12,7 @@ using Foundation;
 using UIKit;
 using NSAction = System.Action;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal class UICollectionViewAdapter : IUICollViewAdapter<UICollectionView, UICollectionViewCell>, IDisposable
     {

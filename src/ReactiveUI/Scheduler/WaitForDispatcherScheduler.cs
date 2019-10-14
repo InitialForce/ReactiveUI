@@ -6,7 +6,7 @@
 using System;
 using System.Reactive.Concurrency;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This scheduler attempts to deal with some of the brain-dead defaults

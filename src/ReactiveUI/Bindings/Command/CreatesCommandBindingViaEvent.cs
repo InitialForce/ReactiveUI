@@ -14,7 +14,7 @@ using System.Windows.Input;
 using Windows.UI.Xaml.Input;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This binder is the default binder for connecting to arbitrary events.

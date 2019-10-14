@@ -14,7 +14,7 @@ using Windows.System.Threading;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This scheduler forces all dispatching to go to the first window of the <see cref="CoreApplication.Views"/> enumeration.

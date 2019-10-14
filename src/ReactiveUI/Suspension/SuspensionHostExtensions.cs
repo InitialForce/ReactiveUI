@@ -8,7 +8,7 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Extension methods associated with the ISuspensionHost interface.

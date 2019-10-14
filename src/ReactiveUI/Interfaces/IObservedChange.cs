@@ -5,7 +5,7 @@
 
 using System.Linq.Expressions;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// IObservedChange is a generic interface that is returned from WhenAny()

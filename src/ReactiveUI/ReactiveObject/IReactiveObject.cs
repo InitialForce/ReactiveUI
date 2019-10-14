@@ -16,7 +16,7 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A reactive object is a interface for ViewModels which will expose

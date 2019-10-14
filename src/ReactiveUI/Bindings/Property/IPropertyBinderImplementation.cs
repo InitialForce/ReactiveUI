@@ -7,7 +7,7 @@ using System;
 using System.Linq.Expressions;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This interface represents an object that is capable

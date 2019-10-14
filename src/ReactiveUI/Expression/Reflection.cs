@@ -14,7 +14,7 @@ using System.Reflection;
 using System.Text;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Helper class for handling Reflection amd Expression tree related items.

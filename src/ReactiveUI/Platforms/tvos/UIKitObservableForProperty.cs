@@ -6,7 +6,7 @@
 using System;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// UIKitObservableForProperty is an object that knows how to

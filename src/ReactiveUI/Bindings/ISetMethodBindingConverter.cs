@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Text;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This converter will allow users to change the way the set functionality is performed in ReactiveUI property binding.

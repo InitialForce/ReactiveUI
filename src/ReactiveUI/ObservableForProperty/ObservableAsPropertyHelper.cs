@@ -12,7 +12,7 @@ using System.Reactive.Subjects;
 using System.Threading;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// ObservableAsPropertyHelper is a class to help ViewModels implement

@@ -10,7 +10,7 @@ using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Order;
 using ReactiveUI;
 
-namespace ReactiveUI.Benchmarks
+namespace ReactiveUIInitialForce.Benchmarks
 {
     /// <summary>
     /// Benchmarking the Mixin class for the RoutableViewModel classes.

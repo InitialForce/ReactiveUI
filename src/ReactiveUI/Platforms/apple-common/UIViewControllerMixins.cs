@@ -19,7 +19,7 @@ using NSViewController = UIKit.UIViewController;
 using AppKit;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal static class UIViewControllerMixins
     {

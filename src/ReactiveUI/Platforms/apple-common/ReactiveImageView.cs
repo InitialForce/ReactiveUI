@@ -22,7 +22,7 @@ using NSView = UIKit.UIView;
 using AppKit;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is an  ImageView that is both and ImageView and has a ReactiveObject powers

@@ -5,7 +5,7 @@
 
 using System.Linq;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Extension methods associated with the RoutingState class.

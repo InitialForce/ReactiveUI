@@ -6,7 +6,7 @@
 using System;
 using System.Reactive.Concurrency;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Platform registrations for a .NET Core application.

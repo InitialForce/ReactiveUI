@@ -10,7 +10,7 @@ using System.Reactive.Concurrency;
 using System.Runtime.CompilerServices;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// The main registration point for common class instances throughout a ReactiveUI application.

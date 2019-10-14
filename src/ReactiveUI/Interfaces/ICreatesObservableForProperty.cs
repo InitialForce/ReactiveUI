@@ -7,7 +7,7 @@ using System;
 using System.Linq.Expressions;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// ICreatesObservableForProperty represents an object that knows how to

@@ -6,7 +6,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This interface represents the result of a Bind/OneWayBind and gives

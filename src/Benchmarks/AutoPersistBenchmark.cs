@@ -11,7 +11,7 @@ using System.Reactive.Linq;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Order;
 
-namespace ReactiveUI.Benchmarks
+namespace ReactiveUIInitialForce.Benchmarks
 {
     /// <summary>
     /// Bench marks associated with the auto persist functionality inside ReactiveUI.

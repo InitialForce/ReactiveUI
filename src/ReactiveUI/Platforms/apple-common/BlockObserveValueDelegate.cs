@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 using Foundation;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal class BlockObserveValueDelegate : NSObject
     {

@@ -12,7 +12,7 @@ using Foundation;
 using Splat;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// ReactiveTableViewSource is a Table View Source that is connected to

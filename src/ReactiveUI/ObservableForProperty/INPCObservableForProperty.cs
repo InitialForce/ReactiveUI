@@ -10,7 +10,7 @@ using System.Linq.Expressions;
 using System.Reactive.Linq;
 using System.Reflection;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Generates Observables based on observing INotifyPropertyChanged objects.

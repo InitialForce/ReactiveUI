@@ -13,7 +13,7 @@ using CoreGraphics;
 using Foundation;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a UICollectionReusableView that is both an UICollectionReusableView and has ReactiveObject powers

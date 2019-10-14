@@ -5,7 +5,7 @@
 
 using System;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// IReactiveNotifyPropertyChanged represents an extended version of

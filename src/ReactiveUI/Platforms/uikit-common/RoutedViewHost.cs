@@ -13,7 +13,7 @@ using DynamicData;
 using DynamicData.Binding;
 using NSViewController = UIKit.UIViewController;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// RoutedViewHost is a ReactiveNavigationController that monitors its RoutingState

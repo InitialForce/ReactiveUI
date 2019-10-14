@@ -9,7 +9,7 @@ using System.Linq;
 using System.Reflection;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// The default converter, simply converts between types that are equal or

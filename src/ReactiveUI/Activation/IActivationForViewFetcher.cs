@@ -5,7 +5,7 @@
 
 using System;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Implement this interface to override how ReactiveUI determines when a

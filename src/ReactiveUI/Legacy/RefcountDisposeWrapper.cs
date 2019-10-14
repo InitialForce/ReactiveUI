@@ -6,7 +6,7 @@
 using System;
 using System.Threading;
 
-namespace ReactiveUI.Legacy
+namespace ReactiveUIInitialForce.Legacy
 {
     internal sealed class RefcountDisposeWrapper
     {

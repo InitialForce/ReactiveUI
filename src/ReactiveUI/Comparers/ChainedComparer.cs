@@ -6,7 +6,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal sealed class ChainedComparer<T> : IComparer<T>
     {

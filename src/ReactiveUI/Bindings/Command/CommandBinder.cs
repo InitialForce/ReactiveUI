@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Windows.Input;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Various helpers to bind View controls and ViewModel commands together.

@@ -5,7 +5,7 @@
 
 using System;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Implement this as a way to intercept bindings at the time that they are

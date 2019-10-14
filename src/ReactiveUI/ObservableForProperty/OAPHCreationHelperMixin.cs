@@ -8,7 +8,7 @@ using System.Diagnostics.Contracts;
 using System.Linq.Expressions;
 using System.Reactive.Concurrency;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A collection of helpers to aid working with observable properties.

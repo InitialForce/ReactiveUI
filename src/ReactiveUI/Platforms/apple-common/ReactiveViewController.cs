@@ -19,7 +19,7 @@ using NSViewController = UIKit.UIViewController;
 using AppKit;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a View that is both a NSViewController and has ReactiveObject powers

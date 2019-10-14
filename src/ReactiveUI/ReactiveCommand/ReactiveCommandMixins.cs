@@ -9,7 +9,7 @@ using System.Reactive;
 using System.Reactive.Linq;
 using System.Windows.Input;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Extension methods associated with the ReactiveCommand class.

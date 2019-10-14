@@ -7,7 +7,7 @@ using System;
 using System.ComponentModel;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Binding Type Converter for component model.

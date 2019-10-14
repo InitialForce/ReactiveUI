@@ -5,7 +5,7 @@
 
 using Android.Views;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Default methods for <see cref="ILayoutViewHost"/>.

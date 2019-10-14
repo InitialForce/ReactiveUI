@@ -8,7 +8,7 @@ using System.Globalization;
 using System.Reactive.Linq;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Extension methods to assist with Logging.

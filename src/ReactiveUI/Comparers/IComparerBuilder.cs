@@ -6,7 +6,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Convienience interface for providing a starting point for chaining comparers.

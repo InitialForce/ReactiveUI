@@ -3,7 +3,7 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for full license information.
 
-namespace ReactiveUI.Benchmarks
+namespace ReactiveUIInitialForce.Benchmarks
 {
     /// <summary>
     /// A mock for the screen in ReactiveUI. This will only contain the routing state.

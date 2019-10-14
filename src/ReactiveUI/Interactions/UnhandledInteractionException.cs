@@ -6,7 +6,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Indicates that an interaction has gone unhandled.

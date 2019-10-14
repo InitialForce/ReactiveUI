@@ -10,7 +10,7 @@ using System.Reflection;
 using Windows.Foundation;
 using Windows.UI.Xaml;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// ActiveationForViewFetcher is how ReactiveUI determine when a

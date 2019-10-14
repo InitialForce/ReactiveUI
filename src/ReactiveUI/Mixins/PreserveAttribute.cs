@@ -5,7 +5,7 @@
 
 using System;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     [AttributeUsage(AttributeTargets.All)]
     internal class PreserveAttribute : Attribute

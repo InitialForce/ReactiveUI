@@ -6,7 +6,7 @@
 using System;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This interface is the extensible implementation of IValueConverters for

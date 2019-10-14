@@ -16,7 +16,7 @@ using Android.App;
 using Android.Content;
 using Android.Runtime;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is an Activity that is both an Activity and has ReactiveObject powers

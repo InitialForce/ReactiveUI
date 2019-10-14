@@ -6,7 +6,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal class ReactiveBinding<TView, TViewModel, TValue> : IReactiveBinding<TView, TViewModel, TValue>
         where TViewModel : class

@@ -17,7 +17,7 @@ using UIKit;
 using AppKit;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// ObservableForPropertyBase represents an object that knows how to

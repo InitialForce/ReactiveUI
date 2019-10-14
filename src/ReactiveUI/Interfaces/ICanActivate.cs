@@ -6,7 +6,7 @@
 using System;
 using System.Reactive;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This Interface is used by the framework to explicitly provide activation

@@ -7,7 +7,7 @@ using System;
 using System.Linq.Expressions;
 using System.Reactive.Linq;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A collection of helpers for <see cref="IObservedChange{TSender, TValue}"/>.

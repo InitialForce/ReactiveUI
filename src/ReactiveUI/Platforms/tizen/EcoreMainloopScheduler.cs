@@ -8,7 +8,7 @@ using System.Reactive.Concurrency;
 using System.Reactive.Disposables;
 using ElmSharp;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal class EcoreMainloopScheduler : IScheduler
     {

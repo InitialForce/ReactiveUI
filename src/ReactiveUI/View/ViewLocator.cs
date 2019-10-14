@@ -5,10 +5,10 @@
 
 using System;
 using System.Diagnostics.CodeAnalysis;
-using ReactiveUI;
+using ReactiveUIInitialForce;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Helper class which will get the currently registered IViewLocator interface inside

@@ -10,7 +10,7 @@ using Android.App;
 using Android.Content;
 using Android.Hardware.Usb;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Extension methods for the usb manager.

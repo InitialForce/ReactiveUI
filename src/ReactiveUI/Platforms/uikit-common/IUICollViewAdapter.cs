@@ -6,7 +6,7 @@
 using System;
 using Foundation;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Interface used to extract a common API between <see cref="UIKit.UITableView"/>

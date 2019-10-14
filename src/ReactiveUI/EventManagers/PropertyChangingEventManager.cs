@@ -5,7 +5,7 @@
 
 using System.ComponentModel;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
 #if !NET_461
     internal class PropertyChangingEventManager : WeakEventManager<INotifyPropertyChanging, PropertyChangingEventHandler, PropertyChangingEventArgs>

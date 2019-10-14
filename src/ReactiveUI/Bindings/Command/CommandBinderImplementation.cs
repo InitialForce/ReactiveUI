@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Windows.Input;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Used by the CommandBinder extension methods to handle binding View controls and ViewModel commands.

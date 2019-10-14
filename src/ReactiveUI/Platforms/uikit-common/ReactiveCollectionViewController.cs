@@ -12,7 +12,7 @@ using System.Reactive.Subjects;
 using Foundation;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a UICollectionViewController that is both an UICollectionViewController and has ReactiveObject powers

@@ -8,7 +8,7 @@ using Android.App;
 using Android.Content;
 using Android.Views;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Returns the current orientation of the device on Android.

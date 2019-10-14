@@ -5,7 +5,7 @@
 
 using System.Runtime.Serialization;
 
-namespace ReactiveUI.Benchmarks
+namespace ReactiveUIInitialForce.Benchmarks
 {
     /// <summary>
     /// A mock for a ReactiveObject which is routable.

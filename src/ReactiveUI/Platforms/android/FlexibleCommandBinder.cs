@@ -11,7 +11,7 @@ using System.Reactive.Linq;
 using System.Reflection;
 using System.Windows.Input;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Command binder for android controls.

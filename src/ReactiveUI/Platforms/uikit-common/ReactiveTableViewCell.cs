@@ -14,7 +14,7 @@ using CoreGraphics;
 using Foundation;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a UITableViewCell that is both an UITableViewCell and has ReactiveObject powers

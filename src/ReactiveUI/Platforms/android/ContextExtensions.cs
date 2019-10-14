@@ -8,7 +8,7 @@ using System.Reactive.Linq;
 using Android.Content;
 using Android.OS;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Extension methods for <see cref="Context"/>.

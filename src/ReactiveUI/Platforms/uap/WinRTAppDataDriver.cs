@@ -18,7 +18,7 @@ using System.Xml.Serialization;
 using Windows.Storage;
 using UnicodeEncoding = Windows.Storage.Streams.UnicodeEncoding;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Loads and saves state to persistent storage.

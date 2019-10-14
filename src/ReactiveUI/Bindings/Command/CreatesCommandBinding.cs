@@ -12,7 +12,7 @@ using Splat;
 
 #pragma warning disable RCS1102 // Make class static. Used as base class.
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal class CreatesCommandBinding
     {

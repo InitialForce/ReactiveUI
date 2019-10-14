@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using Object = Java.Lang.Object;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal static class ObjectExtension
     {

@@ -20,7 +20,7 @@ using DynamicData.Binding;
 using Foundation;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal sealed class CommonReactiveSource<TSource, TUIView, TUIViewCell, TSectionInfo> : ReactiveObject, IDisposable
         where TSectionInfo : ISectionInformation<TSource, TUIView, TUIViewCell>

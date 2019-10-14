@@ -7,7 +7,7 @@ using System;
 using System.Reactive.Concurrency;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// IMessageBus represents an object that can act as a "Message Bus", a

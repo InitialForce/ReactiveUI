@@ -5,7 +5,7 @@
 
 #pragma warning disable CA1040 // Avoid empty interfaces
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Use this Interface when you want to mark a control as recieving View

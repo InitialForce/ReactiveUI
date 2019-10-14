@@ -5,7 +5,7 @@
 
 using System;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Encapsulates a user action behind a reactive interface.

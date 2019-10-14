@@ -11,7 +11,7 @@ using System.Reactive.Subjects;
 using Foundation;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal class UITableViewAdapter : IUICollViewAdapter<UITableView, UITableViewCell>, IDisposable
     {

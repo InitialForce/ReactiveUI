@@ -5,7 +5,7 @@
 
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Implement this to override how RoutedViewHost and ViewModelViewHost

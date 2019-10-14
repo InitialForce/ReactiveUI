@@ -5,7 +5,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal class NotAWeakReference
     {

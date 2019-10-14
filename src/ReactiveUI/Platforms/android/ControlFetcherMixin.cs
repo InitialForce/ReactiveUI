@@ -12,7 +12,7 @@ using System.Runtime.CompilerServices;
 using Android.App;
 using Android.Views;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// ControlFetcherMixin helps you automatically wire-up Activities and

@@ -5,7 +5,7 @@
 
 using Android.Views;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Interface that defines a layout view host.

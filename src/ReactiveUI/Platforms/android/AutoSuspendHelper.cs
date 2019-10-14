@@ -15,7 +15,7 @@ using Android.OS;
 using Java.Lang;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Helps manage android application lifecycle events.

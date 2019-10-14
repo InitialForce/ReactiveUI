@@ -1,9 +1,9 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras">
   <PropertyGroup>
-    <TargetFrameworks>net461</TargetFrameworks>
+    <TargetFrameworks>net461;netcoreapp3.0</TargetFrameworks>
 <!--    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">$(TargetFrameworks);net461;uap10.0.16299;netcoreapp3.0</TargetFrameworks>-->
-    <AssemblyName>ReactiveUI</AssemblyName>
-    <RootNamespace>ReactiveUI</RootNamespace>
+    <AssemblyName>ReactiveUI-InitialForce</AssemblyName>
+    <RootNamespace>ReactiveUIInitialForce</RootNamespace>
     <PackageDescription>A MVVM framework that integrates with the Reactive Extensions for .NET to create elegant, testable User Interfaces that run on any mobile or desktop platform. This is the base package with the base platform implementations</PackageDescription>
     <PackageId>ReactiveUI-InitialForce</PackageId>
     <LangVersion>latest</LangVersion>
@@ -14,7 +14,7 @@
     <None Include="Platforms\**\*.cs" />
     <PackageReference Include="Splat" Version="9.*" />
     <PackageReference Include="DynamicData" Version="6.*" />
-    <PackageReference Include="System.Reactive" Version="4.1.6" />
+    <PackageReference Include="System.Reactive" Version="4.2.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">

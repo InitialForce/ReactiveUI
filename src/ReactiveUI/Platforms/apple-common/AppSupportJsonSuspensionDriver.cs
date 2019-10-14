@@ -10,7 +10,7 @@ using System.Reactive.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using Foundation;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Loads and saves state to persistent storage.

@@ -6,7 +6,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// An exception that is thrown if we are unable to find the View Locator.

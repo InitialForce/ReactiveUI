@@ -15,7 +15,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     [Preserve(AllMembers = true)]
     internal class LinkerOverrides

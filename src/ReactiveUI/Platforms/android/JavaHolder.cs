@@ -10,7 +10,7 @@ using System.Text;
 
 using Object = Java.Lang.Object;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal class JavaHolder : Object
     {

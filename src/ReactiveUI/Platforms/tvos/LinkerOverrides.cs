@@ -6,7 +6,7 @@
 using System;
 using UIKit;
 
-namespace ReactiveUI.Cocoa
+namespace ReactiveUIInitialForce.Cocoa
 {
     /// <summary>
     /// This class exists to force the MT linker to include properties called by RxUI via reflection.

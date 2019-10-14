@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Windows.Input;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Generic command binder platform registrations.

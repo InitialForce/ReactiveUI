@@ -6,7 +6,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Convenience class to help chain selectors onto existing parent comparers.

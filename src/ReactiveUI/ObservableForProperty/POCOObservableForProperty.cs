@@ -10,7 +10,7 @@ using System.Linq.Expressions;
 using System.Reactive.Linq;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This class is the final fallback for WhenAny, and will simply immediately

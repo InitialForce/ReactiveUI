@@ -9,7 +9,7 @@ using System.Reactive.Subjects;
 using System.Threading.Tasks;
 using BenchmarkDotNet.Attributes;
 
-namespace ReactiveUI.Benchmarks
+namespace ReactiveUIInitialForce.Benchmarks
 {
     /// <summary>
     /// Benchmarks associated with the ReactiveCommand object.

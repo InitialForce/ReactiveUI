@@ -14,7 +14,7 @@ using CoreGraphics;
 using Foundation;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a UICollectionViewCell that is both an UICollectionViewCell and has ReactiveObject powers

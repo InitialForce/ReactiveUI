@@ -5,7 +5,7 @@
 
 using System.ComponentModel;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Event arguments for when a property has changed.

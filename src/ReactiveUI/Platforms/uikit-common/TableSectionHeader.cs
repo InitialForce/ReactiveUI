@@ -6,7 +6,7 @@
 using System;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A header or footer of a table section.

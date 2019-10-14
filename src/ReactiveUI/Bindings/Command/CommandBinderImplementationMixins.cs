@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Windows.Input;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Internal implementation details which performs Binding ICommand's to controls.

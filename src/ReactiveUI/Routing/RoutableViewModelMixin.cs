@@ -10,7 +10,7 @@ using System.Reactive.Linq;
 
 using DynamicData;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Extension methods associated with the IRoutableViewModel interface.

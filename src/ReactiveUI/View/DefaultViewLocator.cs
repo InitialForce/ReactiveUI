@@ -9,7 +9,7 @@ using System.Globalization;
 using System.Reflection;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     internal sealed class DefaultViewLocator : IViewLocator, IEnableLogger
     {

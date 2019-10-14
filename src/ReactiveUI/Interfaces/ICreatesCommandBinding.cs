@@ -6,7 +6,7 @@
 using System;
 using System.Windows.Input;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Classes that implement this interface and registered inside Splat will be

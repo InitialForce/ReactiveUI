@@ -8,7 +8,7 @@ using System.Reactive.Disposables;
 using System.Windows.Input;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Extension methods for binding <see cref="ICommand"/> to a <see cref="UIControl"/>.

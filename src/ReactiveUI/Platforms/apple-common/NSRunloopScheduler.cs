@@ -10,7 +10,7 @@ using CoreFoundation;
 using Foundation;
 using NSAction = System.Action;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Provides a scheduler which will use the Cocoa main loop to schedule

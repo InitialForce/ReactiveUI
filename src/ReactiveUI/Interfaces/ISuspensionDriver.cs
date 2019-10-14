@@ -6,7 +6,7 @@
 using System;
 using System.Reactive;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// ISuspensionDriver represents a class that can load/save state to persistent

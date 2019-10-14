@@ -19,7 +19,7 @@ using UIKit;
 using AppKit;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// TargetActionCommandBinder is an implementation of command binding that

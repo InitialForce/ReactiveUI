@@ -12,7 +12,7 @@ using System.Reactive.Subjects;
 using Foundation;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a UIPageViewController that is both an UIPageViewController and has ReactiveObject powers

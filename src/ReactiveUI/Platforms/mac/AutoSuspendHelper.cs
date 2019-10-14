@@ -14,7 +14,7 @@ using AppKit;
 using Foundation;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// AutoSuspend-based App Delegate. To use AutoSuspend with iOS, change your

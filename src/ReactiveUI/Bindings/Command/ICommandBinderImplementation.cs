@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Windows.Input;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Implementation logic for command binding.

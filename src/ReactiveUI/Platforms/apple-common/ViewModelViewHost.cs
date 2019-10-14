@@ -16,7 +16,7 @@ using NSViewController = UIKit.UIViewController;
 using AppKit;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A control which will use Splat dependency injection to determine the View

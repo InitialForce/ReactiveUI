@@ -13,7 +13,7 @@ using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Provides methods to bind properties to observables.

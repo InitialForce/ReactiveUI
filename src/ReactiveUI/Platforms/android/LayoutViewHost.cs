@@ -9,7 +9,7 @@ using Android.Content;
 using Android.Views;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A class that implements the Android ViewHolder pattern. Use it along

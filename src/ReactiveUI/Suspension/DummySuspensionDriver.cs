@@ -7,7 +7,7 @@ using System;
 using System.Reactive;
 using System.Reactive.Linq;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A suspension driver that does not do anything.

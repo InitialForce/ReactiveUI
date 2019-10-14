@@ -12,7 +12,7 @@ using System.Reactive.Subjects;
 using Android.App;
 using Android.Runtime;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a Fragment that is both an Activity and has ReactiveObject powers

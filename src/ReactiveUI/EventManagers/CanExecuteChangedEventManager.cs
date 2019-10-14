@@ -6,7 +6,7 @@
 using System;
 using System.Windows.Input;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
 #if !NET_461
     internal class CanExecuteChangedEventManager : WeakEventManager<ICommand, EventHandler, EventArgs>

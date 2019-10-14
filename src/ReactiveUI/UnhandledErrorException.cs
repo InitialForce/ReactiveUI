@@ -6,7 +6,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Indicates that an object implementing <see cref="IHandleObservableErrors"/> has caused an error and nothing is attached

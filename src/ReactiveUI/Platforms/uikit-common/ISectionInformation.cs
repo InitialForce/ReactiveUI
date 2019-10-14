@@ -7,7 +7,7 @@ using System;
 using System.Collections.Specialized;
 using Foundation;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Interface used to extract a common API between <see cref="UIKit.UIView"/>

@@ -20,7 +20,7 @@ using AppKit;
 using UIControl = AppKit.NSControl;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a UIControl that is both and UIControl and has a ReactiveObject powers

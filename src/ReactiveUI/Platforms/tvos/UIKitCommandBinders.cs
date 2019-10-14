@@ -7,7 +7,7 @@ using System;
 using System.Reflection;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// UI Kit command binder platform registrations.

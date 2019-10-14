@@ -6,7 +6,7 @@
 using System;
 using System.Reactive.Concurrency;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A mock platform registration for the .Net Standard.

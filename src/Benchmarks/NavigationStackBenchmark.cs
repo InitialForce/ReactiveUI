@@ -10,7 +10,7 @@ using System.Reactive.Concurrency;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Order;
 
-namespace ReactiveUI.Benchmarks
+namespace ReactiveUIInitialForce.Benchmarks
 {
     /// <summary>
     /// Benchmarks for the NavigationStack and the RoutingState objects.

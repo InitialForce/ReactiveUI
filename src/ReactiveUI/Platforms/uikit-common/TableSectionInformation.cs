@@ -9,7 +9,7 @@ using System.Diagnostics.CodeAnalysis;
 using Foundation;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Class used to extract a common API between <see cref="UIKit.UITableView"/>

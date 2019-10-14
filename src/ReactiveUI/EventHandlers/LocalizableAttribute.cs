@@ -7,7 +7,7 @@ using System;
 using System.Collections.Specialized;
 
 #if PORTABLE || NETFX_CORE
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A attribute to indicate if the target is localizable or not.

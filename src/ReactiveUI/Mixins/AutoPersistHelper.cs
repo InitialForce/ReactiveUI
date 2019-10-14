@@ -19,7 +19,7 @@ using DynamicData;
 using DynamicData.Binding;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Helper extension method class associated with the AutoPersist related functionality.

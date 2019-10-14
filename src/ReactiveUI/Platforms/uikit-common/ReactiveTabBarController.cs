@@ -12,7 +12,7 @@ using System.Reactive.Subjects;
 using Foundation;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a TabBar that is both an TabBar and has ReactiveObject powers

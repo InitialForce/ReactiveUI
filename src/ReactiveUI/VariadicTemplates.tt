@@ -33,7 +33,7 @@ using System.Text;
 int maxFuncLength = 12;
 #>
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>Extension methods associated with the WhenAny/WhenAnyValue classes.</summary>
     public static class WhenAnyMixin

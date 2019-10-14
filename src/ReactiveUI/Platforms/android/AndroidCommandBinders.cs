@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using Android.Views;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Android implementation that provides binding to an ICommand in the ViewModel to a Control

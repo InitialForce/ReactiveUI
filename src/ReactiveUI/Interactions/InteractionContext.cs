@@ -6,7 +6,7 @@
 using System;
 using System.Threading;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Contains contextual information for an interaction.

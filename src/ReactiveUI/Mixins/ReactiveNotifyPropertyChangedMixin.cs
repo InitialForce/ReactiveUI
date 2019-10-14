@@ -11,7 +11,7 @@ using System.Linq.Expressions;
 using System.Reactive.Linq;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Extension methods associated with the Observable Changes and the

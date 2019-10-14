@@ -12,7 +12,7 @@ using Foundation;
 using Splat;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// ReactiveCollectionViewSource is a Collection View Source that is

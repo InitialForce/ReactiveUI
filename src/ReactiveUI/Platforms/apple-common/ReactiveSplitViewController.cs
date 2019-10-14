@@ -19,7 +19,7 @@ using NSView = UIKit.UIView;
 using AppKit;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a View that is both a NSSplitViewController and has ReactiveObject powers

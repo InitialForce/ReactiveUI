@@ -9,8 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BenchmarkDotNet.Running;
+using ReactiveUI.Benchmarks;
 
-namespace ReactiveUI.Benchmarks
+namespace ReactiveUIInitialForce.Benchmarks
 {
     /// <summary>
     /// Class which hosts the main entry point into the application.
@@ -21,6 +22,7 @@ namespace ReactiveUI.Benchmarks
         /// The main entry point into the benchmarking application.
         /// </summary>
         /// <param name="args">Arguments from the command line.</param>
-        public static void Main(string[] args) => BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
+//        public static void Main(string[] args) => BenchmarkRunner.Run<RaisePropertyChanged>();
+        public static void Main(string[] args) => BenchmarkRunner.Run<ToProperty>();
     }
 }

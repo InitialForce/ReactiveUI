@@ -12,7 +12,7 @@ using System.Runtime.Serialization;
 using Android.Content;
 using Android.Views;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A class that implements the Android ViewHolder pattern with a

@@ -14,7 +14,7 @@ using Android.OS;
 using ReactiveUI;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// HandlerScheduler is a scheduler that schedules items on a running

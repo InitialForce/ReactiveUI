@@ -9,7 +9,7 @@ using System.Reactive.Disposables;
 using System.Reflection;
 using System.Windows.Input;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Class that registers Command Binding and Command Parameter Binding.

@@ -14,7 +14,7 @@ using System.Runtime.InteropServices;
 using Foundation;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This class provides notifications for Cocoa Framework objects based on

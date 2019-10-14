@@ -11,7 +11,7 @@ using System.Text;
 using System.Windows.Input;
 using Android.Views;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Extension methods for view commands.

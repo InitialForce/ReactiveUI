@@ -13,7 +13,7 @@ using Foundation;
 using NSTableViewController = UIKit.UITableViewController;
 using NSTableViewStyle = UIKit.UITableViewStyle;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a NSTableViewController that is both an NSTableViewController and has ReactiveObject powers

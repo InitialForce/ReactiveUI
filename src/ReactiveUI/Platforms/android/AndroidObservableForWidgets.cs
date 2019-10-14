@@ -14,7 +14,7 @@ using Android.Views;
 using Android.Widget;
 using Observable = System.Reactive.Linq.Observable;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Android view objects are not Generally Observable™, so hard-code some

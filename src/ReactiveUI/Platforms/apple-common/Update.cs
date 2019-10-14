@@ -5,7 +5,7 @@
 
 using System.Globalization;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// An update for the index normalizer.

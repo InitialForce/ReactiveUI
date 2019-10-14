@@ -7,7 +7,7 @@ using System;
 using System.Linq.Expressions;
 using System.Reactive;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This class provides extension methods for the ReactiveUI view binding mechanism.

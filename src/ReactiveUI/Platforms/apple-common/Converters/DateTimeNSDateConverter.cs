@@ -6,7 +6,7 @@
 using System;
 using Foundation;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Binding Type Converter for DateTime to NSDateTime.

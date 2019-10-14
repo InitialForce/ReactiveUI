@@ -11,7 +11,7 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// A set of extension methods to help wire up View and ViewModel activation.

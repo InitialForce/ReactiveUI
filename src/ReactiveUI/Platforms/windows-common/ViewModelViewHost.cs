@@ -20,9 +20,9 @@ using System.Windows.Controls;
 #endif
 
 #if HAS_UNO
-namespace ReactiveUI.Uno
+namespace ReactiveUIInitialForce.Uno
 #else
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 #endif
 {
     /// <summary>

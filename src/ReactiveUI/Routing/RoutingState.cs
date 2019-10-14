@@ -13,7 +13,7 @@ using System.Runtime.Serialization;
 using DynamicData;
 using DynamicData.Binding;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// RoutingState manages the ViewModel Stack and allows ViewModels to

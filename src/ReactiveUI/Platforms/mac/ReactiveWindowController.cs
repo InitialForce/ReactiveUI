@@ -10,7 +10,7 @@ using System.Reactive.Subjects;
 using AppKit;
 using Foundation;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// This is a NSWindowController that is both a NSWindowController and has ReactiveObject powers

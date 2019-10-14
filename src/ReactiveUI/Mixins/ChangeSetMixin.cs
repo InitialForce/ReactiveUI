@@ -7,7 +7,7 @@ using System;
 using System.Reactive.Linq;
 using DynamicData;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Mixin associated with the DynamicData IChangeSet class.

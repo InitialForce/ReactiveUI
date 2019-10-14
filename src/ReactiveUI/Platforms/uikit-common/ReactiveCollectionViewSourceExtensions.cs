@@ -12,7 +12,7 @@ using System.Reactive.Linq;
 using Foundation;
 using UIKit;
 
-namespace ReactiveUI
+namespace ReactiveUIInitialForce
 {
     /// <summary>
     /// Extension methods for <see cref="ReactiveCollectionViewSource{TSource}"/>.
